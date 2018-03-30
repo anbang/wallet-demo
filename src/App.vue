@@ -19,10 +19,10 @@ export default {
 }
 </script>
 
-<style>
-.czr-logo{width: 100px;margin: 10px;}
+<style lang='scss'>
+@import './assets/css/reset.scss';
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -30,4 +30,5 @@ export default {
   /* margin-top: 60px; */
 }
 #bodyer{min-height: 300px;}
+.czr-logo{max-height: 90px;margin-top: 30px;}
 </style>

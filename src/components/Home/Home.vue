@@ -9,7 +9,7 @@ export default {
   name: 'Bodyer',
   data () {
     return {
-      msg: '欢迎来到CZR钱包的主界面'
+      msg: '欢迎来到CZR钱包的主界面222'
     }
   }
 }
