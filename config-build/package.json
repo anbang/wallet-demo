@@ -1,0 +1,34 @@
+{
+  "name": "CZR-Wallet",
+  "productName": "CZR-Wallet",
+  "version": "1.0.0",
+  "keywords": [
+    "block-wallet"
+  ],
+  "description": "This project is a wallet of CZR , wetsite is http://www.canonchain.com/",
+  "repository": "https://github.com/canonchain/czr-wallet",
+  "author": "CZR_DEV",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "buildFast": "electron-builder --dir",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.canonchain.www",
+    "electronVersion": "1.8.4",
+    "mac": {
+      "icon": "static/icons/icon.icns"
+    },
+    "win": {
+      "icon": "static/icons/icon.ico"
+    },
+    "linux": {
+      "icon": "static/icons"
+    }
+  },
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.1"
+  }
+}
