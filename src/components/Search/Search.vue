@@ -1,16 +1,15 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1> 
-    <h2>Ecosystemhh(((((++hh2</h2>
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Search',
   data () {
     return {
-      msg: 'Welcome to Your App'
+      msg: '查询页面222'
     }
   }
 }
