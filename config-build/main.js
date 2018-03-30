@@ -12,7 +12,15 @@ app.on('activate', activateFn);//在OS X上，当单击Dock图标并且没有其
 
 function createWindow() {
     // 创建浏览器窗口
-    mainWindow = new BrowserWindow({width: 800, height: 600});
+    mainWindow = new BrowserWindow({
+        width: 800, 
+        height: 600,
+        icon:"./static/icons/logo.png",
+        title:"CZR Walleti Default",
+        resizable:false,
+        fullscreenable:false,
+        useContentSize:true
+    });
 
     // 并加载应用程序的index.html
     // mainWindow.loadURL('http://localhost:8080/#/')
