@@ -1,15 +1,32 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>当前账号 {{ currentAcc }} <a href="#">发起转账</a></h1>
+    <h2>余额：{{accBalance}} Eth</h2>
+    <ul>
+      <li>交易记</li>
+    </ul>
+    <!-- <p>{{balaceVal}}</p> -->
+
   </div>
 </template>
 
 <script>
+import web3 from '@/global/web3.js'
+
 export default {
   name: 'Account',
   data () {
     return {
-      msg: '账号界面，巴拉巴拉'
+      msg: '账号',
+      currentAcc:this.$route.params.id,
+      balaceVal:web3.eth.getBalance(this.$route.params.id).toNumber()
+    }
+  },
+  computed:{
+    accBalance:function(){
+      var balaceWei = web3.eth.getBalance(this.currentAcc).toNumber();
+      var balaceVal = web3.fromWei(balaceWei, 'ether')
+      return balaceVal;
     }
   }
 }

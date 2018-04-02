@@ -3,7 +3,7 @@
       <!-- <h2 class="header-tit">{{logo}}.com</h2> -->
       <ul>
           <li><router-link to="/"><i class="iconfont">&#xe60d;</i> 首页</router-link></li>
-          <li><router-link to="/account"><i class="iconfont">&#xe60a;</i>账号</router-link></li>
+          <!-- <li><router-link to="/account"><i class="iconfont">&#xe60a;</i>账号</router-link></li> -->
           <li><router-link to="/search"><i class="iconfont">&#xe69c;</i>查询</router-link></li>
           <li><router-link to="/setting"><i class="iconfont">&#xe78a;</i>设置</router-link></li>
       </ul>

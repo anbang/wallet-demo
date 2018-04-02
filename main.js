@@ -13,7 +13,7 @@ app.on('activate', activateFn);//在OS X上，当单击Dock图标并且没有其
 function createWindow() {
     // 创建浏览器窗口
     mainWindow = new BrowserWindow({
-        width: 800, 
+        width: 800+500, 
         height: 600,
         icon:"./static/icons/logo.png",
         title:"CZR Walleti Default",
@@ -32,7 +32,7 @@ function createWindow() {
     // }));
 
     // 打开开发者工具.
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     // 窗户关闭时触发
     mainWindow.on('closed', function () {

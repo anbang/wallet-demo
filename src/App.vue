@@ -2,7 +2,7 @@
   <div id="app">
     <Header></Header>
     <div id="bodyer">
-      <img src="./assets/logo.png" class="czr-logo">
+      <!-- <img src="./assets/logo.png" class="czr-logo"> -->
       <router-view/>
     </div>
     <Footer></Footer>
@@ -12,6 +12,7 @@
 <script>
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
+
 
 export default {
   name: 'App',
@@ -29,6 +30,6 @@ export default {
   color: #2c3e50;
   /* margin-top: 60px; */
 }
-#bodyer{min-height: 300px;}
+#bodyer{min-height: 300px;width: 800px;margin: 0 auto;}
 .czr-logo{max-height: 90px;margin-top: 30px;}
 </style>

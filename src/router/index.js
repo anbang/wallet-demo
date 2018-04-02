@@ -20,6 +20,11 @@ export default new Router({
       component: Account
     },
     {
+      path: '/account/:id',
+      name: 'Account',
+      component: Account
+    },
+    {
       path: '/search',
       name: 'Search',
       component: Search
